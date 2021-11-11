@@ -1,0 +1,45 @@
+#page-home {
+    display: flex;
+    padding: 128px;
+    justify-content: center;
+
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 16px 48px;
+        text-align: justify;
+        align-items: center;
+
+        strong {
+            font: 700 32px 'Quicksand', sans-serif;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font: 400 20px 'Quicksand', sans-serif;
+            text-indent: 3ch;
+            margin-bottom: 5px;
+        }
+    }
+
+    
+    .img-text {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        img {
+            width: 75%;
+            height: 75%;
+            margin-top: 15px;
+            margin-bottom: 20px
+        }
+
+        p {
+            font: 400 16px 'Quicksand', sans-serif;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            text-indent: 0;
+        }
+    }
+}

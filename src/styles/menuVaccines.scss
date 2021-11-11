@@ -1,0 +1,31 @@
+#component-menuVaccines { 
+    display: flex;
+    padding: 120px;
+    align-items: center;
+    flex-direction: column;
+
+    strong {
+        font: 700 28px 'Quicksand', sans-serif;
+    }
+
+    
+    main {
+        display: flex;
+        flex-direction: row;
+        padding: 32px;
+        align-items: center;
+
+        button {
+            border: none;
+            margin-right: 40px;
+            background: #5CDB95;
+            color: #05386B; 
+            cursor: pointer;
+            font: 500 18px 'Quicksand', sans-serif;
+
+            &:hover {
+                color: #edf5e1;
+            }
+        }
+    }
+}

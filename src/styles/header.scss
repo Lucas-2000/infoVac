@@ -1,0 +1,44 @@
+#component-header {
+    display: flex;
+    padding: 32px;
+    justify-content: center;
+    background: #5CDB95;
+    position: fixed;
+    width: 145.3vh;
+
+    .title-info {
+        display: flex;
+        color: #05386B;
+
+        h1 {
+            font: 700 40px 'Quicksand', sans-serif ;
+            text-decoration: underline;
+        }
+
+        p {
+            font: 500 24px 'Quicksand', sans-serif ;
+            padding: 14px 32px;
+        }
+    }
+
+    .pages-button {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        padding: 14px;
+        margin-left: 200px;
+
+        button {
+            width: 100px;
+            border: none;
+            background: #5CDB95;
+            color: #05386B; 
+            cursor: pointer;
+            font: 500 24px 'Quicksand', sans-serif ;
+
+            &:hover {
+                color: #edf5e1;
+            }
+        }
+    }
+}
