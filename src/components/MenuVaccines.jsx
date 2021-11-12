@@ -16,8 +16,8 @@ const MenuVaccines = () => {
                 <Link to='/vaccines/febreamarela'>
                     <button>Febre Amarela</button>
                 </Link>
-                <Link to='/vaccines/poliomelite'>
-                    <button>Poliomelite</button>
+                <Link to='/vaccines/poliomielite'>
+                    <button>Poliomielite</button>
                 </Link>
                 <Link to='/vaccines/bcg'>
                     <button>BCG</button>

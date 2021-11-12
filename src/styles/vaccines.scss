@@ -1,6 +1,7 @@
 #page-vaccines {
     display: flex;
     padding: 0 210px;
+    margin-bottom: 100px;
 
     main {
         display: flex;
@@ -9,7 +10,9 @@
 
         strong {
             margin-bottom: 20px;
+            margin-top: 20px;
             font: 700 28px 'Quicksand', sans-serif;
+            text-decoration: underline;
         }
 
         img {

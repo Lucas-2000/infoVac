@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../components/Header'
 import MenuVaccines from '../components/MenuVaccines'
-import febre from '../assets/images/febretifosa.jpg'
+import febreTifoide from '../assets/images/febretifosa.jpg'
 import '../styles/vaccines.scss'
 
 const FebreTifoide = () => {
@@ -12,7 +12,7 @@ const FebreTifoide = () => {
             <div id="page-vaccines">
                 <main>
                     <strong>Vacina Febre Tifoide</strong>
-                    <img src={febre} alt="Febre Tifoide" />
+                    <img src={febreTifoide} alt="Febre Tifoide" />
                     <strong>Do que é feita?</strong>
                     <p>Trata-se de vacina inativada, portanto, não tem como causar a doença.</p>
                     <p>É composta por polissacarídeos da cápsula da bactéria (Salmonella typhi), fenol, cloreto de sódio, fosfato dissódico diidratado, fosfato monossódico diidratado e água para injeção.</p>
