@@ -1,23 +1,29 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import  '../styles/header.scss'
+import '../styles/header.scss'
+import logotipo from '../assets/images/logotipo.png';
 
 const Header = () => {
     return (
-        <div id="component-header">
-            <div className="title-info">
-                <h1>InfoVac</h1>
-                <p>Informativo sobre vacinas</p>
-            </div>
-            <div className="pages-button">
+        <header id="component-header">
+            <div className="header--contain">
+                <div className="header--logotipo">
                 <Link to='/'>
-                    <button>Home</button>
+                    <img src={logotipo}/>
                 </Link>
-                <Link to='/vaccines'>
-                    <button>Vacinas</button>
-                </Link>
+                    
+                    {/* <p>Informativo sobre vacinas</p> */}
+                </div>
+                <nav className="pages-button">
+                    <li>
+                        <Link to='/'>Home</Link>
+                    </li>
+                    <li>
+                        <Link to='/vaccines'>Vacinas</Link>
+                    </li>
+                </nav>
             </div>
-        </div>
+        </header>
     )
 }
 

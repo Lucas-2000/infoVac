@@ -6,5 +6,11 @@ body, input, button, textarea {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: #5CDB95;
+    // color: #333333 !important;
+    // background: #5CDB95;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }

@@ -1,13 +1,26 @@
-import React from 'react'
-import Header from '../components/Header'
-import vaccines from '../assets/images/vaccines.jpg'
-import '../styles/home.scss'
+import React from 'react';
+import Header from '../components/Header';
+import vaccines from '../assets/images/vaccines.jpg';
+import vac_illustrator from '../assets/images/vac_illustrator.svg';
+import '../styles/home.scss';
 
 const Home = () => {
     return (
-        <div>
+        <main>
             <Header />
-            <div id="page-home">
+            <section className="banner">
+                <div className="contain">
+                    <div className="content col">
+                        <h1>Vacinação</h1>
+                        <h1>e suas importâncias.</h1>
+                        <h2>Proteja-se, sua vida vale mais!</h2>
+                    </div>
+                    <div className="col">
+                        <img alt="banner_alt" src={vac_illustrator}/>
+                    </div>
+                </div>
+            </section>
+            <section id="page-home">
                 <main>
                     <strong>História da vacina – Para entender sua Importância</strong>
                     <p>
@@ -30,8 +43,8 @@ const Home = () => {
                         Até hoje, é a única doença humana já erradicada, um exemplo do que podemos alcançar quando todas as nações trabalham em conjunto. O sucesso do programa de erradicação forneceu conhecimento e ferramentas vitais no que diz respeito à vigilância epidemiológica, aos benefícios da vacinação de bloqueio e à importância da promoção da saúde no enfrentamento a enfermidades como a poliomielite e o ebola. Além disso, permitiu estabelecer as bases para o fortalecimento de programas de imunização, de atenção primária e impulsionou o acesso universal à saúde em diversos países. No Brasil, o direito é garantido desde a Constituição de 1988.
                     </p>
                 </main>
-            </div>
-        </div>
+            </section>
+        </main>
     )
 }
 
