@@ -67,7 +67,7 @@ main {
     padding: 20px 50px;
     justify-content: center;
     max-width: 960px;
-    margin: auto ;
+    margin: auto;
     border-radius: 20px;
     box-shadow: 0px 0px 44px -5px rgba(102, 102, 102, 0.10);
 
@@ -124,28 +124,27 @@ main {
 @media screen and (max-width: 990px) {
     main {
         .banner {
-            padding-top: 0px;
+            padding-top: 130px;
+            display: block;
 
             .contain {
-                .col:nth-child(1) {
-                    order: 2;
-                    margin: 20px;
-                }
+                display: block;
 
-                .col:nth-child(2) {
-                    order: 1;
+                .col:nth-child(1) {
+                    margin: 20px;
                 }
 
                 .col {
                     flex: auto;
                     max-width: none;
 
-                    :nth-child(1) {
-                        order: 2;
+                    h1 {
+                        font-size: 28px;
+                        margin: 0;
                     }
 
                     img {
-                        max-width: 80%;
+                        max-width: 65%;
                         margin: auto;
                         display: block;
                     }

@@ -4,12 +4,14 @@ import MenuVaccines from '../components/MenuVaccines'
 import hepatite from '../assets/images/hepatiteb.jpg'
 import '../styles/vaccines.scss'
 import Fade from 'react-reveal/Fade';
+import ScrollIndicator from './ScrollIndicator'
 
 const HepatiteB = () => {
     return (
         <div>
             <Header />
             <MenuVaccines />
+            <ScrollIndicator/>
             <div id="page-vaccines">
                 <main>
                     <Fade bottom>

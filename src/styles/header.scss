@@ -25,109 +25,42 @@
             img {
                 width: 90px;
             }
-    
+
             h1 {
-                font: 700 40px 'Quicksand', sans-serif ;
+                font: 700 40px 'Quicksand', sans-serif;
                 text-decoration: underline;
             }
-    
+
             p {
-                font: 500 24px 'Quicksand', sans-serif ;
+                font: 500 24px 'Quicksand', sans-serif;
                 padding: 14px 32px;
             }
         }
-    
-    .nav-menu {
-        display: grid;
-        grid-template-columns: repeat(5, auto);
-        grid-gap: 10px;
-        list-style: none;
-        text-align: center;
-        width: 70vw;
-        justify-content: end;
-        margin-right: 2rem;
-    }
-    
-    .nav-item {
-        display: flex;
-        align-items: center;
-        height: 80px;
-    }
-    
-    .nav-links {
-        width: 100px;
-        border: none;
-        cursor: pointer;
-        font: 500 17px 'Quicksand', sans-serif ;
-        display: flex;
-        position: relative;
-        justify-content: center;
-    
-        &:hover {
-            color: #45327E;
-        }
 
-        &:after {
-            position: absolute;
-            bottom: -5px;
-            left: 46%;
-            width: 8px;
-            height: 8px;
-            border-radius: 10px;
-            content: "";
-            background-color: #45327E;
-            opacity: 0;
-            transition: all 200ms linear 0s;
-        }
-
-        &:hover:after {
-            bottom: -10px;
-            opacity: 1;
-        }
-    }
-    
-    .fa-bars {
-        color: #05386B;
-    }
-    
-    .nav-links-mobile {
-        display: none;
-    }
-    
-    .menu-icon {
-        display: none;
-    }
-    
-    @media screen and (max-width: 960px) {
-        .NavbarItems {
-        position: relative;
-        }
-    
         .nav-menu {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 90vh;
-        position: absolute;
-        top: 80px;
-        left: -100%;
-        opacity: 1;
-        transition: all 0.5s ease;
-        justify-content: start;
+            display: grid;
+            grid-template-columns: repeat(5, auto);
+            grid-gap: 10px;
+            list-style: none;
+            text-align: center;
+            width: 70vw;
+            justify-content: end;
+            margin-right: 2rem;
         }
-    
-        .nav-menu.active {
-        background: #fff ;
-        left: 0;
-        opacity: 1;
-        transition: all 0.5s ease;
-        z-index: 1;
+
+        .nav-item {
+            display: flex;
+            align-items: center;
+            height: 80px;
         }
-    
+
         .nav-links {
-            padding: 2rem;
-            width: 100%;
-            display: block;
+            width: 100px;
+            border: none;
+            cursor: pointer;
+            font: 500 17px 'Quicksand', sans-serif;
+            display: flex;
+            position: relative;
             justify-content: center;
 
             &:hover {
@@ -136,8 +69,8 @@
 
             &:after {
                 position: absolute;
-                bottom: 1px;
-                left: 49%;
+                bottom: -5px;
+                left: 46%;
                 width: 8px;
                 height: 8px;
                 border-radius: 10px;
@@ -148,32 +81,100 @@
             }
 
             &:hover:after {
+                bottom: -10px;
                 opacity: 1;
             }
         }
-    
-        .navbar-logo {
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: translate(25%, 50%);
+
+        .fa-bars {
+            color: #05386B;
         }
-    
+
+        .nav-links-mobile {
+            display: none;
+        }
+
         .menu-icon {
-        display: block;
-        position: absolute;
-        top: 5;
-        right: 0;
-        transform: translate(-100%, 60%);
-        font-size: 1.8rem;
-        cursor: pointer;
+            display: none;
         }
-    
-        .fa-times {
-        color: #05386B;
-        font-size: 2rem;
-        }
-    
+
+        @media screen and (max-width: 960px) {
+            align-items: initial;
+
+            .NavbarItems {
+                position: relative;
+            }
+
+            .nav-menu {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 90vh;
+                position: absolute;
+                top: 80px;
+                left: -100%;
+                opacity: 1;
+                transition: all 0.5s ease;
+                justify-content: start;
+            }
+
+            .nav-menu.active {
+                background: #fff;
+                left: 0;
+                opacity: 1;
+                transition: all 0.5s ease;
+                z-index: 1;
+            }
+
+            .nav-links {
+                padding: 2rem;
+                width: 100%;
+                display: block;
+                justify-content: center;
+
+                &:hover {
+                    color: #45327E;
+                }
+
+                &:after {
+                    position: absolute;
+                    bottom: 1px;
+                    left: 49%;
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 10px;
+                    content: "";
+                    background-color: #45327E;
+                    opacity: 0;
+                    transition: all 200ms linear 0s;
+                }
+
+                &:hover:after {
+                    opacity: 1;
+                }
+            }
+
+            .navbar-logo {
+                position: absolute;
+                top: 0;
+                left: 0;
+                transform: translate(25%, 50%);
+            }
+
+            .menu-icon {
+                display: block;
+                position: absolute;
+                right: 8%;
+                transform: translate(-100%, 60%);
+                font-size: 1.8rem;
+                cursor: pointer;
+            }
+
+            .fa-times {
+                color: #05386B;
+                font-size: 2rem;
+            }
+
 
         }
     }

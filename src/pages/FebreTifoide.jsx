@@ -2,14 +2,17 @@ import React from 'react'
 import Header from '../components/Header'
 import MenuVaccines from '../components/MenuVaccines'
 import febreTifoide from '../assets/images/febretifosa.jpg'
+import { Link, animateScroll as scroll } from "react-scroll";
 import '../styles/vaccines.scss'
 import Fade from 'react-reveal/Fade';
+import ScrollIndicator from './ScrollIndicator';
 
 const FebreTifoide = () => {
     return (
         <div>
             <Header />
             <MenuVaccines />
+            <ScrollIndicator/>
             <div id="page-vaccines">
                 <main>
                     <Fade bottom>

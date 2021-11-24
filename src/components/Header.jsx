@@ -17,6 +17,7 @@ const Header = () => {
             <Link to='/'>
                 <img src={logotipo}/>
             </Link>
+            </div>
         <nav>
             <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -35,11 +36,10 @@ const Header = () => {
                 >
                 Vacinas 
                 </Link>
-                </li>
+            </li>
             </ul>
         </nav>
         </div>
-    </div>
     </header>
   );
 }

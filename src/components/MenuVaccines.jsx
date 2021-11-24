@@ -13,7 +13,7 @@ const MenuVaccines = () => {
     return (
         <div id="component-menuVaccines">
             <div className="contain">
-                <strong>Selecione abaixo para saber referente alguma vacina</strong>
+                <h2>Selecione abaixo para saber referente alguma vacina</h2>
                 <nav>
                     <Link to='/vaccines/febretifoide'>
                         <li>

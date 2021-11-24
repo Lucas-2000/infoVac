@@ -4,12 +4,14 @@ import MenuVaccines from '../components/MenuVaccines'
 import bcg from '../assets/images/bcg.jpg'
 import '../styles/vaccines.scss'
 import Fade from 'react-reveal/Fade';
+import ScrollIndicator from './ScrollIndicator'
 
 const BCG = () => {
     return (
         <div>
             <Header />
             <MenuVaccines />
+            <ScrollIndicator/>
             <div id="page-vaccines">
                 <main>
                     <Fade bottom>
