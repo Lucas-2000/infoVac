@@ -3,6 +3,7 @@ import Header from '../components/Header'
 import MenuVaccines from '../components/MenuVaccines'
 import covid from '../assets/images/covid.png'
 import '../styles/vaccines.scss'
+import Fade from 'react-reveal/Fade';
 
 const Covid = () => {
     return (
@@ -11,7 +12,8 @@ const Covid = () => {
             <MenuVaccines />
             <div id="page-vaccines">
                 <main>
-                    <strong>Vacina da Covid</strong>
+                    <Fade bottom>
+                    <strong className="titulo">Vacina da Covid</strong>
                     <img src={covid} alt="Covid" />
                     <strong>Quais e como são as vacinas Covid-19 em estudo ou já em utilização?</strong>
                     <p>Várias são as tecnologias aplicadas nas vacinas que estão em desenvolvimento e/ou já em uso ao redor do mundo. Todas se dirigem contra a proteína S (de spike: espícula, em português), que é responsável pela adesão do SARS-CoV-2 às nossas células, com consequente invasão e infecção.</p>
@@ -43,6 +45,7 @@ const Covid = () => {
                     <strong>Programa Brasileiro de Vacinação contra a Covid-19</strong>
                     <p>Desenvolvido pelo Programa Nacional de Imunizações (PNI) em cooperação com o comitê de especialistas da Câmara Técnica Assessora, o Plano Nacional de Operacionalização da Campanha de Vacinação contra a Covid-19 (PNO) contém as diretrizes para a condução da campanha no país.</p>
                     <p>O documento foi elaborado de acordo com a viabilidade operacional das ações e sob princípios similares aos estabelecidos pela Organização Pan-Americana de Saúde (OPAS) e a Organização Mundial da Saúde (OMS). O conteúdo é atualizado por meio de informes técnicos sempre que necessário. </p>
+                    </Fade>
                 </main>
             </div>
         </div>

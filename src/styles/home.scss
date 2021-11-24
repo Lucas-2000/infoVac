@@ -1,6 +1,6 @@
 main {
     .banner {
-        background: linear-gradient(90deg, #05386B, #000);
+        background: linear-gradient(90deg, #05386B, #021222);
         padding-top: 130px;
         height: 90vh;
         display: flex;
@@ -64,14 +64,12 @@ main {
 
 #page-home {
     display: flex;
-    padding: 20px;
+    padding: 20px 50px;
     justify-content: center;
     max-width: 960px;
-    margin: auto;
-
-    .new-line {
-        height: 15px;
-    }
+    margin: auto ;
+    border-radius: 20px;
+    box-shadow: 0px 0px 44px -5px rgba(102, 102, 102, 0.10);
 
     main {
         h2 {
@@ -147,7 +145,7 @@ main {
                     }
 
                     img {
-                        width: 80%;
+                        max-width: 80%;
                         margin: auto;
                         display: block;
                     }

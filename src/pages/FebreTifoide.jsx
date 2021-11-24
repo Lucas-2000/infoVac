@@ -3,6 +3,7 @@ import Header from '../components/Header'
 import MenuVaccines from '../components/MenuVaccines'
 import febreTifoide from '../assets/images/febretifosa.jpg'
 import '../styles/vaccines.scss'
+import Fade from 'react-reveal/Fade';
 
 const FebreTifoide = () => {
     return (
@@ -11,7 +12,8 @@ const FebreTifoide = () => {
             <MenuVaccines />
             <div id="page-vaccines">
                 <main>
-                    <strong>Vacina Febre Tifoide</strong>
+                    <Fade bottom>
+                    <strong className="titulo">Vacina Febre Tifoide</strong>
                     <img src={febreTifoide} alt="Febre Tifoide" />
                     <strong>Do que é feita?</strong>
                     <p>Trata-se de vacina inativada, portanto, não tem como causar a doença.</p>
@@ -46,7 +48,8 @@ const FebreTifoide = () => {
                     <strong>Efeitos e eventos adversos:</strong>
                     <p>A vacina febre tifoide causa poucas reações, sendo as mais frequentes relacionadas com o local da aplicação: dor, em 3,6% a 9,4% dos vacinados; vermelhidão, em 2,4% a 5,4%; inchaço, em 1,7% a 1,8%. Outras possíveis reações: febre, em 1,5% a 16,2%; dor de cabeça, em 10% a 7,8%; mal-estar, em 0,9% a 4%; náuseas, em 2,1% a 5%; e coceira, em 1,7% a 1,8%.</p>
                     <strong>Onde pode ser encontrada:</strong>
-                    <p>Nos serviços privados de vacinação e centros de atendimento ao viajante.</p>
+                    <p>Nos serviços privados de vacinação e centros de atendimento ao viajante.</p> 
+                    </Fade>
                 </main>
             </div>
         </div>

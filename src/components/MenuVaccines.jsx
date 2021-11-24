@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
 import '../styles/menuVaccines.scss'
 import yellow from '../assets/images/injections/injection_yellow.svg';

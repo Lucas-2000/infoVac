@@ -4,22 +4,29 @@
     margin-bottom: 100px;
 
     main {
-        display: flex;
-        flex-direction: column;
-        text-align: justify;
+        background: #fff;
+        padding: 20px 50px;
+        margin: auto;
+        border-radius: 20px;
+        align-items: center;
+        width: 95%;
+        box-shadow: 0px 0px 44px -5px rgba(102, 102, 102, 0.10);
+        
+        .titulo {
+            text-align: center;
+        }
 
         strong {
             margin-bottom: 20px;
-            margin-top: 20px;
-            font: 700 28px 'Quicksand', sans-serif;
-            text-decoration: underline;
+            margin-top: 10px;
+            font: 500 28px 'Quicksand', sans-serif;
+            display: block;
         }
 
         img {
-            width: 100%;
-            height: 75%;
-            margin-top: 15px;
-            margin-bottom: 20px
+            margin: auto;
+            padding: 0 15%;
+            max-width: 100%;
         }
 
         p {

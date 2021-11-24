@@ -3,6 +3,7 @@ import Header from '../components/Header'
 import MenuVaccines from '../components/MenuVaccines'
 import poliomielite from '../assets/images/poliomielite.jpg'
 import '../styles/vaccines.scss'
+import Fade from 'react-reveal/Fade';
 
 const Poliomelite = () => {
     return (
@@ -11,7 +12,8 @@ const Poliomelite = () => {
             <MenuVaccines />
             <div id="page-vaccines">
                 <main>
-                    <strong>Vacina poliomielite</strong>
+                    <Fade bottom>
+                    <strong className="titulo">Vacina poliomielite</strong>
                     <img src={poliomielite} alt="Poliomielite" />
                     <strong>Do que é feita:</strong>
                     <p>Vacina Oral Poliomielite (VOP) – É uma vacina oral atenuada bivalente, ou seja, composta pelos vírus da pólio tipos 1 e 3, vivos, mas “enfraquecidos”. Contém ainda cloreto de magnésio, estreptomicina, eritromicina, polissorbato 80, L-arginina e água destilada.</p>
@@ -69,6 +71,7 @@ const Poliomelite = () => {
                     <strong>Onde pode ser encontrada:</strong>
                     <p>Apresentação isolada está disponível nas Unidades Básicas de Saúde para as três primeiras doses do esquema infantil de rotina. As demais doses para a prevenção da poliomielite são feitas com a vacina VOP.</p>
                     <p>Nas Unidades Básicas de Saúde, para as doses de reforço e nas campanhas de vacinação.</p>
+                    </Fade>
                 </main>
             </div>
         </div>
