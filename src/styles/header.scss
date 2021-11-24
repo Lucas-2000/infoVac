@@ -7,6 +7,10 @@
     background-color: white;
     z-index: 1;
 
+    button {
+        display: none;
+    }
+
     .header--contain {
         width: 70%;
         margin: auto;
@@ -70,6 +74,26 @@
                     bottom: -10px;
                     opacity: 1;
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 990px) {
+    #component-header {
+        position: static;
+
+        button {
+            display: block;
+        }
+
+        .header--contain { 
+            width: inherit;
+            justify-content: space-around;
+
+            .pages-button {
+                margin-left: 0px;
+                display: none;
             }
         }
     }

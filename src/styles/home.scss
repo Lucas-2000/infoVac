@@ -1,7 +1,6 @@
 main {
     .banner {
-        background-color: #05386B;
-        // background-color: #ffd794;
+        background: linear-gradient(90deg, #05386B, #000);
         padding-top: 130px;
         height: 90vh;
         display: flex;
@@ -13,6 +12,7 @@ main {
             max-width: 960px;
             width: 100%;
             display: flex;
+            flex-wrap: wrap;
 
             h1 {
                 margin: 0 0 10px 0;
@@ -32,7 +32,7 @@ main {
                 flex: 0 0 50%;
                 max-width: 50%;
             }
-    
+
             img {
                 max-width: 100%;
                 height: auto;
@@ -40,21 +40,23 @@ main {
 
                 @-webkit-keyframes up-down {
                     0% {
-                      transform: translateY(10px);
+                        transform: translateY(10px);
                     }
+
                     100% {
-                      transform: translateY(-10px);
+                        transform: translateY(-10px);
                     }
-                  }
-                  
-                  @keyframes up-down {
+                }
+
+                @keyframes up-down {
                     0% {
-                      transform: translateY(10px);
+                        transform: translateY(10px);
                     }
+
                     100% {
-                      transform: translateY(-10px);
+                        transform: translateY(-10px);
                     }
-                  }
+                }
             }
         }
     }
@@ -62,8 +64,22 @@ main {
 
 #page-home {
     display: flex;
-    padding: 128px;
+    padding: 20px;
     justify-content: center;
+    max-width: 960px;
+    margin: auto;
+
+    .new-line {
+        height: 15px;
+    }
+
+    main {
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+    }
 
     section {
         display: flex;
@@ -71,6 +87,7 @@ main {
         padding: 16px 48px;
         text-align: justify;
         align-items: center;
+
 
         strong {
             font: 700 32px 'Quicksand', sans-serif;
@@ -84,7 +101,7 @@ main {
         }
     }
 
-    
+
     .img-text {
         display: flex;
         align-items: center;
@@ -106,3 +123,40 @@ main {
     }
 }
 
+@media screen and (max-width: 990px) {
+    main {
+        .banner {
+            padding-top: 0px;
+
+            .contain {
+                .col:nth-child(1) {
+                    order: 2;
+                    margin: 20px;
+                }
+
+                .col:nth-child(2) {
+                    order: 1;
+                }
+
+                .col {
+                    flex: auto;
+                    max-width: none;
+
+                    :nth-child(1) {
+                        order: 2;
+                    }
+
+                    img {
+                        width: 80%;
+                        margin: auto;
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        a {
+            word-break: break-all;
+        }
+    }
+}

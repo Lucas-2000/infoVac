@@ -14,7 +14,9 @@ const Header = () => {
                     
                     {/* <p>Informativo sobre vacinas</p> */}
                 </div>
+                <button>Menu</button>
                 <nav className="pages-button">
+
                     <li>
                         <Link to='/'>Home</Link>
                     </li>
