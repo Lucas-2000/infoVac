@@ -13,51 +13,50 @@ const MenuVaccines = () => {
     return (
         <div id="component-menuVaccines">
             <div className="contain">
-                <h2>Selecione abaixo para saber referente alguma vacina</h2>
                 <nav>
-                    <Link to='/vaccines/febretifoide'>
+                    <Link to='/vaccines/febretifoide' style={{ textDecoration: 'none' }}> 
                         <li>
                             <p>Febre Tifoide</p>
                             <img src={yellow}/>    
                         </li>
                     </Link>
 
-                    <Link to='/vaccines/hepatiteb'>
+                    <Link to='/vaccines/hepatiteb' style={{ textDecoration: 'none' }}>
                         <li>
                             <p>Hepatite B</p>
                             <img src={blue}/>
                         </li>
                     </Link>
 
-                    <Link to='/vaccines/febreamarela'>
+                    <Link to='/vaccines/febreamarela' style={{ textDecoration: 'none' }}>
                         <li>
                             <p>Febre Amarela</p>
                             <img src={bluelight}/>
                         </li>
                     </Link>
 
-                    <Link to='/vaccines/poliomielite'>
+                    <Link to='/vaccines/poliomielite' style={{ textDecoration: 'none' }}>
                         <li>
                             <p>Poliomielite</p>
                             <img src={green}/>
                         </li>
                     </Link>
 
-                    <Link to='/vaccines/bcg'>
+                    <Link to='/vaccines/bcg' style={{ textDecoration: 'none' }}>
                         <li>
                             <p>BCG</p>
                             <img src={orange}/>
                         </li>
                     </Link>
 
-                    <Link to='/vaccines/hpv'>
+                    <Link to='/vaccines/hpv' style={{ textDecoration: 'none' }}>
                         <li>
                             <p>HPV</p>
                             <img src={pink}/>
                         </li>
                     </Link>
 
-                    <Link to='/vaccines/covid'>
+                    <Link to='/vaccines/covid' style={{ textDecoration: 'none' }}>
                         <li>
                             <p>Covid</p>
                             <img src={red}/>

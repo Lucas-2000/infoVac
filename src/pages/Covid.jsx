@@ -11,7 +11,6 @@ const Covid = () => {
         <div>
             <Header />
             <MenuVaccines />
-            <ScrollIndicator/>
             <div id="page-vaccines">
                 <main>
                     <Fade bottom>

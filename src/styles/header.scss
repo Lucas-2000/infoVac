@@ -4,7 +4,7 @@
     position: fixed;
     width: 100%;
     height: 130px;
-    background-color: white;
+    background-color: transparent;
     z-index: 1;
 
     button {
@@ -20,7 +20,7 @@
 
         .header--logotipo {
             display: flex;
-            color: #05386B;
+            color: #fff;
 
             img {
                 width: 90px;
@@ -48,6 +48,11 @@
             margin-right: 2rem;
         }
 
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
         .nav-item {
             display: flex;
             align-items: center;
@@ -55,39 +60,25 @@
         }
 
         .nav-links {
-            width: 100px;
-            border: none;
-            cursor: pointer;
-            font: 500 17px 'Quicksand', sans-serif;
-            display: flex;
-            position: relative;
+            width: 100%;
+            display: block;
             justify-content: center;
+            transition: 0.3s ease;
+            border-top: 3px solid transparent;
+            border-bottom: 3px solid transparent;
+            padding: 20px 0;
+            margin: 0 20px;
 
             &:hover {
-                color: #45327E;
-            }
-
-            &:after {
-                position: absolute;
-                bottom: -5px;
-                left: 46%;
-                width: 8px;
-                height: 8px;
-                border-radius: 10px;
-                content: "";
-                background-color: #45327E;
-                opacity: 0;
-                transition: all 200ms linear 0s;
-            }
-
-            &:hover:after {
-                bottom: -10px;
-                opacity: 1;
+                color: #9bcee4;
+                border-top: 2px solid #9bcee4;
+                border-bottom: 2px solid #9bcee4;
+                padding: 6px 0; 
             }
         }
 
         .fa-bars {
-            color: #05386B;
+            color: #9bcee4;
         }
 
         .nav-links-mobile {
@@ -127,30 +118,19 @@
             }
 
             .nav-links {
-                padding: 2rem;
                 width: 100%;
                 display: block;
                 justify-content: center;
+                transition: 0.3s ease;
+                border-top: 4px solid #fff;
+                border-bottom: 4px solid #fff;
+                padding: 20px 0;
+                margin: 0 20px;
 
                 &:hover {
-                    color: #45327E;
-                }
-
-                &:after {
-                    position: absolute;
-                    bottom: 1px;
-                    left: 49%;
-                    width: 8px;
-                    height: 8px;
-                    border-radius: 10px;
-                    content: "";
-                    background-color: #45327E;
-                    opacity: 0;
-                    transition: all 200ms linear 0s;
-                }
-
-                &:hover:after {
-                    opacity: 1;
+                    border-top: 4px solid #9bcee4;
+                    border-bottom: 4px solid #9bcee4;
+                    padding: 6px 0; 
                 }
             }
 
@@ -171,7 +151,7 @@
             }
 
             .fa-times {
-                color: #05386B;
+                color: #9bcee4;
                 font-size: 2rem;
             }
 

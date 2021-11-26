@@ -1,6 +1,9 @@
 import React from 'react';
 import Header from '../components/Header';
-import vaccines from '../assets/images/vaccines.jpg';
+import card1 from '../assets/images/card1.svg';
+import card2 from '../assets/images/card2.svg';
+import card3 from '../assets/images/card3.svg';
+import vaccines from '../assets/images/vaccines.jpg'
 import vac_illustrator from '../assets/images/vac_illustrator.svg';
 import Fade from 'react-reveal/Fade';
 import '../styles/home.scss';
@@ -21,10 +24,42 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+            <section className="cards">
+                <div class="row">
+                    <div class="col-md-4 px-22">
+                        <div class="prevention-card ">
+                            <img src={ card1} class="img-2" alt=""/>
+                            <div class="card-detail">
+                                <h3 class="card-title">Conheça o Projeto</h3>
+                                <p class="card-line">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 px-22">
+                        <div class="prevention-card ">
+                            <img src={card2} class="img-2" alt=""/>
+                            <div class="card-detail">
+                                <h3 class="card-title">Como funciona a Vacina</h3>
+                                <p class="card-line">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 px-22">
+                        <div class="prevention-card ">
+                            <img src={card3} class="img-2" alt=""/>
+                            <div class="card-detail">
+                                <h3 class="card-title">Um pouco da história</h3>
+                                <p class="card-line">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section id="page-home">
-                <main>
                     <Fade bottom>
-                        <h2>História da vacina – Para entender sua Importância</h2>
+                    <h2 className="titulo">História da vacina – Para entender sua Importância</h2>
                         <p>
                             Em 8 de maio de 1980, a Organização Mundial de Saúde declarava erradicada uma das piores, mais cruéis e catastróficas moléstias já existentes. Tratava-se da varíola, doença infecto-contagiosa exclusiva do homem, causada por um vírus chamado Orthopoxvirus variolae. Durante os 80 anos em que a varíola ficou ativa, a varíola matou mais de 300 milhões de indivíduos. Esse número é bem superior ao de outras moléstias, como a tuberculose, a hanseníase, a gripe espanhola, a peste e até mesmo a Aids. Nem mesmo a soma do número de mortos de todas as guerras (inclusive as mundiais), superaria o de vítimas da varíola.
                         </p><br/>
@@ -45,7 +80,6 @@ const Home = () => {
                             Até hoje, é a única doença humana já erradicada, um exemplo do que podemos alcançar quando todas as nações trabalham em conjunto. O sucesso do programa de erradicação forneceu conhecimento e ferramentas vitais no que diz respeito à vigilância epidemiológica, aos benefícios da vacinação de bloqueio e à importância da promoção da saúde no enfrentamento a enfermidades como a poliomielite e o ebola. Além disso, permitiu estabelecer as bases para o fortalecimento de programas de imunização, de atenção primária e impulsionou o acesso universal à saúde em diversos países. No Brasil, o direito é garantido desde a Constituição de 1988.
                         </p><br/>
                     </Fade>
-                </main>
             </section>
         </main>
     )
