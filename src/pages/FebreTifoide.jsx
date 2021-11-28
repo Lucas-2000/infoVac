@@ -2,15 +2,25 @@ import React from 'react'
 import Header from '../components/Header'
 import MenuVaccines from '../components/MenuVaccines'
 import febreTifoide from '../assets/images/febretifosa.jpg'
-import { Link, animateScroll as scroll } from "react-scroll";
 import '../styles/vaccines.scss'
 import Fade from 'react-reveal/Fade';
-import ScrollIndicator from './ScrollIndicator';
+import Footer from '../components/Footer'
 
 const FebreTifoide = () => {
     return (
         <div>
             <Header />
+            <section className="banner-vacinas">
+            <div className="banner-text">
+                    <div className="content col">
+                        <h1>Como funcionam as Vacinas?</h1>
+                        <h2>Saiba informações cruciais sobre as vacinas mais conhecidas</h2>
+                    </div>
+                </div>
+                <a href="#component-menuVaccines">
+                <div className="banner-button">Saiba Mais</div>
+                </a>
+            </section>
             <MenuVaccines />
             <div id="page-vaccines">
                 <main>
@@ -54,6 +64,7 @@ const FebreTifoide = () => {
                     </Fade>
                 </main>
             </div>
+            <Footer />
         </div>
     )
 }

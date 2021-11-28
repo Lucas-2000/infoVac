@@ -5,11 +5,23 @@ import febreAmarela from '../assets/images/febreamarela.jpg'
 import { Link, animateScroll as scroll } from "react-scroll";
 import Fade from 'react-reveal/Fade';
 import ScrollIndicator from './ScrollIndicator';
+import Footer from '../components/Footer'
 
 const FebreAmarela = () => {
     return (
         <div>
             <Header />
+            <section className="banner-vacinas">
+            <div className="banner-text">
+                    <div className="content col">
+                        <h1>Como funcionam as Vacinas?</h1>
+                        <h2>Saiba informações cruciais sobre as vacinas mais conhecidas</h2>
+                    </div>
+                </div>
+                <a href="#component-menuVaccines">
+                <div className="banner-button">Saiba Mais</div>
+                </a>
+            </section>
             <MenuVaccines />
             <div id="page-vaccines">
                 <main>
@@ -21,6 +33,7 @@ const FebreAmarela = () => {
                     </Fade>
                 </main>
             </div>
+            <Footer />
         </div>
     )
 }

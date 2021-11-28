@@ -5,15 +5,14 @@
     align-items: center;
     flex-direction: column;
     align-items: center;
-    height: 30 vh ;
+    height: 150px ;
 
     .contain {
-        margin-top: 120px;
         height: 100%;
         width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: end;
         align-items: center;
         line-height: 20px;
 
@@ -50,7 +49,7 @@
                 font-weight: 500;
                 padding: 0px;
                 transition: all 80ms linear 0s;
-                border-bottom: 0px solid #9bcee4 ;
+                border-bottom: 0px solid #ffae26 ;
             }
 
             img {
@@ -67,7 +66,7 @@
                 margin-top: 10px;
             }
             &:hover p {
-                border-bottom: 2px solid #9bcee4 ;
+                border-bottom: 2px solid #ffae26 ;
             }
         }
     }

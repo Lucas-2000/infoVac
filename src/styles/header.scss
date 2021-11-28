@@ -1,7 +1,7 @@
 #component-header {
     display: flex;
     justify-content: center;
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 130px;
     background-color: transparent;
@@ -42,7 +42,7 @@
             grid-template-columns: repeat(5, auto);
             grid-gap: 10px;
             list-style: none;
-            text-align: center;
+            text-align: centers;
             width: 70vw;
             justify-content: end;
             margin-right: 2rem;
@@ -70,9 +70,9 @@
             margin: 0 20px;
 
             &:hover {
-                color: #9bcee4;
-                border-top: 2px solid #9bcee4;
-                border-bottom: 2px solid #9bcee4;
+                color: #ffae26;
+                border-top: 2px solid #ffae26;
+                border-bottom: 2px solid #ffae26;
                 padding: 6px 0; 
             }
         }

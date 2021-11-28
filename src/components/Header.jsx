@@ -37,6 +37,24 @@ const Header = () => {
                 Vacinas 
                 </Link>
             </li>
+            <li className='nav-item'>
+                <Link
+                to='/Historia'
+                className='nav-links'
+                onClick={closeMobileMenu}
+                >
+                História
+                </Link>
+            </li>
+            <li className='nav-item'>
+                <Link
+                to='/Projeto'
+                className='nav-links'
+                onClick={closeMobileMenu}
+                >
+                Sobre o Projeto
+                </Link>
+            </li>
             </ul>
         </nav>
         </div>

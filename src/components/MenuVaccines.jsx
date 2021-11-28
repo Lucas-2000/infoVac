@@ -14,7 +14,7 @@ const MenuVaccines = () => {
         <div id="component-menuVaccines">
             <div className="contain">
                 <nav>
-                    <Link to='/vaccines/febretifoide' style={{ textDecoration: 'none' }}> 
+                    <Link to='/vaccines/febretifoide' style={{ textDecoration: 'none' }}>
                         <li>
                             <p>Febre Tifoide</p>
                             <img src={yellow}/>    

@@ -5,11 +5,23 @@ import covid from '../assets/images/covid.png'
 import '../styles/vaccines.scss'
 import Fade from 'react-reveal/Fade';
 import ScrollIndicator from './ScrollIndicator'
+import Footer from '../components/Footer'
 
 const Covid = () => {
     return (
         <div>
             <Header />
+            <section className="banner-vacinas">
+            <div className="banner-text">
+                    <div className="content col">
+                        <h1>Como funcionam as Vacinas?</h1>
+                        <h2>Saiba informações cruciais sobre as vacinas mais conhecidas</h2>
+                    </div>
+                </div>
+                <a href="#component-menuVaccines">
+                <div className="banner-button">Saiba Mais</div>
+                </a>
+            </section>
             <MenuVaccines />
             <div id="page-vaccines">
                 <main>
@@ -49,6 +61,7 @@ const Covid = () => {
                     </Fade>
                 </main>
             </div>
+            <Footer/>
         </div>
     )
 }
