@@ -57,10 +57,6 @@ const FebreTifoide = () => {
                         <li>Qualquer sintoma grave e/ou inesperado após a vacinação deve ser notificado ao serviço que a realizou.</li>
                         <li>Sintomas de eventos adversos persistentes, que se prolongam por mais de 72 horas (dependendo do sintoma), devem ser investigados para verificação de outras causas.</li>
                     </ul>
-                    <strong>Efeitos e eventos adversos:</strong>
-                    <p>A vacina febre tifoide causa poucas reações, sendo as mais frequentes relacionadas com o local da aplicação: dor, em 3,6% a 9,4% dos vacinados; vermelhidão, em 2,4% a 5,4%; inchaço, em 1,7% a 1,8%. Outras possíveis reações: febre, em 1,5% a 16,2%; dor de cabeça, em 10% a 7,8%; mal-estar, em 0,9% a 4%; náuseas, em 2,1% a 5%; e coceira, em 1,7% a 1,8%.</p>
-                    <strong>Onde pode ser encontrada:</strong>
-                    <p>Nos serviços privados de vacinação e centros de atendimento ao viajante.</p> 
                     </Fade>
                 </main>
             </div>
