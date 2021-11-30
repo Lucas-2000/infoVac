@@ -5,11 +5,13 @@ import febreTifoide from '../assets/images/febretifosa.jpg'
 import '../styles/vaccines.scss'
 import Fade from 'react-reveal/Fade';
 import Footer from '../components/Footer'
+import ScrollIndicator from './ScrollIndicator'
 
 const FebreTifoide = () => {
     return (
         <div>
             <Header />
+            <MenuVaccines />
             <section className="banner-vacinas">
             <div className="banner-text">
                     <div className="content col">
@@ -17,46 +19,73 @@ const FebreTifoide = () => {
                         <h2>Saiba informações cruciais sobre as vacinas mais conhecidas</h2>
                     </div>
                 </div>
-                <a href="#component-menuVaccines">
+                <a href="#page-vaccines">
                 <div className="banner-button">Saiba Mais</div>
                 </a>
             </section>
-            <MenuVaccines />
+            <ScrollIndicator />
             <div id="page-vaccines">
                 <main>
                     <Fade bottom>
                     <strong className="titulo">Vacina Febre Tifoide</strong>
                     <img src={febreTifoide} alt="Febre Tifoide" />
-                    <strong>Do que é feita?</strong>
-                    <p>Trata-se de vacina inativada, portanto, não tem como causar a doença.</p>
-                    <p>É composta por polissacarídeos da cápsula da bactéria (Salmonella typhi), fenol, cloreto de sódio, fosfato dissódico diidratado, fosfato monossódico diidratado e água para injeção.</p>
-                    <strong>Indicação:</strong>
-                    <ul>
-                        <li>
-                            Crianças a partir de 2 anos de idade, adolescentes e adultos que viajam para áreas de alta incidência da doença, em situações específicas de longa permanência e após análise médica criteriosa.
-                        </li>
-                        <li>
-                            Profissionais que lidam com águas contaminadas e dejetos.
-                        </li>
-                    </ul>
-                    <strong>Contraindicação:</strong>
+                    <p>A febre tifóide é uma doença relativamente séria e rara causada pela bactéria Salmonella enterica typhi, popularmente conhecida como "tifo". </p>
+                    <p>A Febre tifóide é mais frequente em países do sudeste Asiático e África. No Brasil é observado alguns registros da doença, que são surtos isolados nas regiões Norte e Nordeste. </p>
                     <p>
-                        Hipersensibilidade conhecida a qualquer um dos componentes da vacina.
+                    Uma vez que a bactéria tifóide entra na corrente sanguínea, deve ser tratada imediatamente. A pessoa pode desenvolver complicações graves em órgãos como fígado, baço, vesícula biliar e até na medula óssea, o que pode levar à morte.
                     </p>
-                    <strong>Esquema de doses:</strong>
                     <p>
-                    Uma dose. A vacina confere proteção por três anos, de modo que a revacinação pode ser recomendada após este período, se o risco de adoecimento persistir ou retornar.
+                        Entre os sintomas, podemos destacar:
                     </p>
-                    <strong>Via de aplicação:</strong>
-                    <p>Intramuscular ou subcutânea.</p>
-                    <strong>Cuidados antes, durante e após a vacinação:</strong>
                     <ul>
-                        <li>Em caso de febre recomenda-se adiar a vacinação até a melhora.</li>
-                        <li>Não são necessários cuidados especiais antes da vacinação.</li>
-                        <li>Compressas frias aliviam a reação no local da aplicação. Em casos mais intensos, pode ser usada medicação para dor, sob recomendação médica.</li>
-                        <li>Qualquer sintoma grave e/ou inesperado após a vacinação deve ser notificado ao serviço que a realizou.</li>
-                        <li>Sintomas de eventos adversos persistentes, que se prolongam por mais de 72 horas (dependendo do sintoma), devem ser investigados para verificação de outras causas.</li>
-                    </ul>
+                        <li>Febre alta;</li>
+                        <li>Mal-estar;</li>
+                        <li>Dor de cabeça;</li>
+                        <li>Diarreia com sangue e constipação;</li>
+                        <li>Perda do apetite;</li>
+                        <li>Hepatoesplenomegalia;</li>
+                        <li>Dores e inchaço no abdômen;</li>
+                        <li>Náuseas e vômitos;</li>
+                        <li>Tosse seca;</li>
+                        <li>Bradicardia;</li>
+                        <li>Manchas rosadas que aparecem na região do abdômen;</li>
+                        <li>Prostração.</li>
+                    </ul><br/>
+                    <p>Os sintomas de febre tifóide podem durar várias semanas a um mês, sem o devido tratamento. Porém a grande parte dos casos evolui bem.</p><br/>
+                    <p>O tratamento é à base de antibióticos e reidratação, casos graves são raros o qual é indicado a internação. A média do tratamento é de aproximadamente de 14 dias.
+                    </p><br/>
+                    <p>A prevenção se dá por meio de uma higiene pessoal adequada, os alimentos a serem consumidos devem ser bem higienizados e preparados de forma correta, como por exemplo, lavar bem as frutas e verduras, a carne deve ser bem cozida para o consumo e manter bem armazenado.
+                    </p><br/>
+                    <p>A vacina é disponibilizada no Brasil, porém não é recomendada de rotina devido não ser uma doença pandêmica.  
+                    </p><br/>
+                    <strong>A vacina contra a Febre Tifóide</strong>
+                    <p>A Vacina inativada de Febre Tifóide, tem em sua composição polissacarídeos da cápsula da bactéria (Salmonella typhi), fenol, cloreto de sódio, fosfato dissódico diidratado, fosfato monossódico diidratado e água para injeção. Não tem risco de desenvolver a doença.
+                    </p><br/>
+                    <p>É indicada para crianças a partir de 2 anos, adolescentes e adultos que viajam para locais de alta incidência da doença e profissionais que trabalham com água contaminada e dejetos, é contraindicado para pessoas que tenham hipersensibilidade aos componentes da vacina.
+                    </p><br/>
+                    <p>A vacina é aplicada em dose única, com a proteção de três anos, após esta data, pode haver a revacinação se acontecer o risco de surto da doença.
+                    </p><br/>
+                    <p>Via de aplicação: Intramuscular e subcutânea.</p><br/>
+                    <p>Alguns efeitos, eventos adversos e possíveis reações após a vacinação:  
+                    </p><br/>
+                    <ul>
+                        <li>Dor,</li>
+                        <li>Vermelhidão,</li>
+                        <li>Inchaço. </li>
+                    </ul><br/>
+                    <p>Possíveis reações como: 
+                    </p><br/>
+                    <ul>
+                        <li>Febre, </li>
+                        <li>Dor de cabeça, </li>
+                        <li>Mal-estar, </li>
+                        <li>Náuseas, </li>
+                        <li>Coceira.</li>
+                    </ul><br/>
+                    <p>A vacina pode ser encontrada nos serviços privados e centros de atendimento ao viajante.
+                    </p><br/>
+                    <p>Importante ressaltar que a proteção da vacina contra a Febre Tifóide é dada a partir do décimo quarto dia de aplicação.
+                    </p><br/>
                     </Fade>
                 </main>
             </div>

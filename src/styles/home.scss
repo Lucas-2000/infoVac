@@ -10,6 +10,7 @@ main {
 
 
         .contain {
+            font-family: 'Lobster', cursive;
             max-width: 960px;
             width: 100%;
             display: flex;
@@ -141,7 +142,7 @@ main {
                 font-weight: 500;
                 font-size: 14px;
                 letter-spacing: 0.01em;
-                color: #777777;
+                color: #000;
             }
         }
         &:hover{
@@ -169,7 +170,7 @@ main {
         display: flex;
         flex-direction: column;
         padding: 16px 48px;
-        text-align: justify;
+        text-align: left;
         align-items: center;
         
         .history-title{
@@ -185,7 +186,7 @@ main {
         }
 
         p {
-            font: 400 20px 'Quicksand', sans-serif;
+            font-family: 'Nunito Sans', sans-serif;
             text-indent: 3ch;
             margin-bottom: 5px;
             line-height: 150%;
@@ -206,7 +207,7 @@ main {
         }
 
         p {
-            font: 400 16px 'Quicksand', sans-serif;
+            font-family: 'Nunito Sans', sans-serif;
             margin-top: 10px;
             margin-bottom: 15px;
             text-indent: 0;

@@ -14,7 +14,7 @@ const Historia = () => {
             <section className="banner-historia">
             <div className="banner-text">
                     <div className="content col">
-                        <h1>Um pouco de história...</h1>
+                        <h1>História da vacina – Para entender sua Importância</h1>
                         <h2>Conheça um pouco de como teve início a vacinação no mundo atual</h2>
                     </div>
                 </div>

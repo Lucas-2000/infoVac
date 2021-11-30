@@ -4,7 +4,7 @@ import '../styles/scrollIndicator.scss';
 
 const ScrollIndicator = () => {
     return (
-        <Link to="Header" smooth={true} duration={500}>
+        <Link to="page-vaccines" smooth={true} duration={200}>
             <div class="scrolldown-wrapper">
                 <div class="scrolldown">
                     <svg height="30" width="10">

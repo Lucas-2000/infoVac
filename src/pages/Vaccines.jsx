@@ -6,6 +6,7 @@ const Vaccines = () => {
     return (
         <div>
             <Header />
+            <MenuVaccines />
             <section className="banner-vacinas">
             <div className="banner-text">
                     <div className="content col">
@@ -14,10 +15,8 @@ const Vaccines = () => {
                     </div>
                 </div>
                 <a href="#component-menuVaccines">
-                <div className="banner-button">Saiba Mais</div>
                 </a>
             </section>
-            <MenuVaccines />
         </div>
     )
 }

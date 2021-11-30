@@ -1,5 +1,5 @@
 body, input, button, textarea {
-    font: 400 16px 'Quicksand', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
 
 }
 
@@ -15,6 +15,7 @@ body, input, button, textarea {
 
 
 .banner-historia{
+    
     padding-top: 130px;
     height: 100vh;
     display: flex;
@@ -26,6 +27,7 @@ body, input, button, textarea {
     align-content: stretch;
 
     .banner-text {
+        font-family: 'Lobster', cursive;
         max-width: 960px;
         width: 100%;
         display: flex;
@@ -80,6 +82,7 @@ body, input, button, textarea {
     align-content: stretch;
 
     .banner-text {
+        font-family: 'Lobster', cursive;
         max-width: 960px;
         width: 100%;
         display: flex;
@@ -125,6 +128,7 @@ body, input, button, textarea {
 
 
 .banner-button{
+    font-family: 'Lobster', cursive;
     color: #fff;
     margin-top: 10px;
     max-width: 960px;
@@ -139,6 +143,7 @@ body, input, button, textarea {
 }
 
 #page {
+    text-align: justify;
     display: flex;
     padding: 20px 50px;
     justify-content: center;
@@ -148,12 +153,11 @@ body, input, button, textarea {
     box-shadow: 0px 0px 44px -5px rgba(102, 102, 102, 0.10);
     align-items: center;
     scroll-behavior: smooth;
-    }
+    
 
     section {
         display: flex;
         flex-direction: column;
-        padding: 16px 48px;
         text-align: justify;
         align-items: center;
         
@@ -170,7 +174,7 @@ body, input, button, textarea {
         }
 
         p {
-            font: 400 20px 'Quicksand', sans-serif;
+            font-family: 'Nunito Sans', sans-serif;
             margin-bottom: 5px;
             line-height: 150%;
         }
@@ -188,6 +192,7 @@ body, input, button, textarea {
             flex: 4;
 
             p{
+                text-align: justify;
                 padding: 20px;
             }
 
@@ -195,8 +200,22 @@ body, input, button, textarea {
                 margin-top: 55px ;
                 max-height: 200px;
                 border-radius: 20px;
+                max-width: 100px;
             }
         }
     }
 
+    .alunos{
+        text-align: left;
 
+        table{
+            width: 100%;
+
+            td{
+                padding: 10px;
+                text-transform: uppercase;
+            }
+        }
+
+    }
+}

@@ -12,6 +12,7 @@ const HPV = () => {
     return (
         <div>
             <Header />
+            <MenuVaccines />
             <section className="banner-vacinas">
             <div className="banner-text">
                     <div className="content col">
@@ -19,11 +20,11 @@ const HPV = () => {
                         <h2>Saiba informações cruciais sobre as vacinas mais conhecidas</h2>
                     </div>
                 </div>
-                <a href="#component-menuVaccines">
+                <a href="#page-vaccines">
                 <div className="banner-button">Saiba Mais</div>
                 </a>
             </section>
-            <MenuVaccines />
+            <ScrollIndicator />
             <div id="page-vaccines">
                 <main>
                     <Fade bottom>
