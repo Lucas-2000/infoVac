@@ -7,7 +7,7 @@ main {
         align-items: center;
         justify-content: center;
         box-sizing: border-box;
-
+        box-shadow: 0px 0px 44px -5px rgba(0, 0, 0, 0.65);
 
         .contain {
             font-family: 'Lobster', cursive;
@@ -64,8 +64,6 @@ main {
     }
 }
 
-
-
 .cards {
     flex: 0 0 100%;
     max-width: 70%;
@@ -101,7 +99,7 @@ main {
 
     .prevention-card {
         background: #FFFFFF;
-        box-shadow: 0px 0px 44px -5px rgba(102, 102, 102, 0.10);
+        box-shadow: 0px 0px 44px -5px rgba(102, 102, 102, 0.25);
         border-radius: 25px;
         border: none;
         padding-top: 10px;
@@ -111,6 +109,7 @@ main {
         transform: scale(1);
         transition: all 200ms linear 0s;
         cursor: pointer;
+        height: 290px;
 
         .img-fluid{
             max-width: 100%;
@@ -164,8 +163,6 @@ main {
     scroll-behavior: smooth;
     }
 
-
-
     section {
         display: flex;
         flex-direction: column;
@@ -174,11 +171,11 @@ main {
         align-items: center;
         
         .history-title{
-            padding: 5px;
-            background: #D4E6F1;
-            border-radius: 10px 10px 0 0 ;
-            border-bottom: 2px solid #05386B;
-            margin: 8px;
+            border-top: 2px solid #ffa000;
+            border-bottom: 2px solid #ffa000;
+            padding: 6px 0;
+            margin-bottom: 20px;
+            font-size: 32px;
         }
 
         a{
@@ -200,10 +197,16 @@ main {
         flex-direction: column;
 
         img {
-            width: 75%;
-            height: 75%;
-            margin-top: 15px;
-            margin-bottom: 20px
+            width: 650px;
+            box-shadow: 0px 0px 44px -5px rgba(21, 21, 21, 0.25);
+            border-radius: 10px;
+            display: block;
+            margin: 20px auto;
+            margin-top: 0px;
+
+            @media screen and (max-width: 960px) {
+                width: 100%;
+            }
         }
 
         p {
@@ -213,7 +216,6 @@ main {
             text-indent: 0;
         }
     }
-
 
 @media screen and (max-width: 990px) {
     main {
@@ -238,7 +240,6 @@ main {
                     }
 
                     img {
-                        max-width: 65%;
                         margin: auto;
                         display: block;
                     }
@@ -246,8 +247,19 @@ main {
             }
         }
 
-        a {
-            word-break: break-all;
+        .cards {
+            flex: inherit;
+            max-width: initial;
+            margin: 0;
+
+            .row {
+                margin: 0;
+                justify-content: center;
+
+                .col-md-4 {
+                    width: 100%;
+                }
+            }
         }
     }
 }

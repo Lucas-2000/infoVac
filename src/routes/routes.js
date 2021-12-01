@@ -1,7 +1,6 @@
 import React from 'react'
 import { BrowserRouter, BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import BCG from '../pages/BCG'
-import Covid from '../pages/Covid'
 import FebreAmarela from '../pages/FebreAmarela'
 import FebreTifoide from '../pages/FebreTifoide'
 import HepatiteB from '../pages/HepatiteB'
@@ -23,7 +22,6 @@ const routes = () => {
            <Route path="/vaccines/poliomielite" element={<Poliomielite />} />
            <Route path="/vaccines/bcg" element={<BCG />} />
            <Route path="/vaccines/hpv" element={<HPV />} />
-           <Route path="/vaccines/covid" element={<Covid />} />
            <Route path="/Historia" element={<Historia />} />
            <Route path="/Projeto" element={<Projeto />} />
        </Routes>

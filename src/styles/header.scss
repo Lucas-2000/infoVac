@@ -73,7 +73,7 @@
                 color: #ffae26;
                 border-top: 2px solid #ffae26;
                 border-bottom: 2px solid #ffae26;
-                padding: 6px 0; 
+                padding: 6px 0;
             }
         }
 
@@ -126,12 +126,12 @@
                 border-bottom: 4px solid #fff;
                 padding: 20px 0;
                 margin: 0 20px;
-
-                &:hover {
-                    border-top: 4px solid #9bcee4;
-                    border-bottom: 4px solid #9bcee4;
-                    padding: 6px 0; 
-                }
+                color: black;
+                text-align: center;
+                font-size: 18px;
+                border-top: 4px solid #9bcee469;
+                border-bottom: 4px solid #9bcee469;
+                padding: 6px 0;
             }
 
             .navbar-logo {

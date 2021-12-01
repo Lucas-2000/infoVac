@@ -4,12 +4,11 @@
     background: transparent;
     flex-direction: column;
     align-items: center;
-    height: 300px ;
     justify-content: center;
+    padding-top: 130px;
 
 
     .contain {
-        height: 57%;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -18,13 +17,11 @@
         line-height: 20px;
 
         @media screen and (max-width: 960px) {
-
             padding: 15px;
             text-align: center;
         }
 
         nav {
-            
             position: relative;
             display: flex;
             padding: 5px;
@@ -37,7 +34,6 @@
         }
 
         li {
-            
             display: flex;
             flex-direction: column;
             padding: 0px 15px;
@@ -46,8 +42,6 @@
             transition: all 200ms linear 0s;
             text-decoration: none;
             color: #fff;
-            
-
 
             p {
                 border-radius: 5px;
@@ -55,7 +49,7 @@
                 font-weight: 500;
                 padding: 5px;
                 transition: all 80ms linear 0s;
-                border-bottom: 0px solid #ffae26 ;
+                border-bottom: 0px solid #ffae26;
             }
 
             img {
@@ -71,8 +65,9 @@
                 opacity: 1;
                 margin-top: 10px;
             }
+
             &:hover p {
-                border-bottom: 2px solid #ffae26 ;
+                border-bottom: 2px solid #ffae26;
             }
         }
     }

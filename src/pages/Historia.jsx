@@ -1,11 +1,10 @@
 import React from 'react'
 import Header from '../components/Header'
-import MenuVaccines from '../components/MenuVaccines'
 import vaccines from '../assets/images/vaccines.jpg'
 import '../styles/global.scss'
 import Fade from 'react-reveal/Fade';
-import ScrollIndicator from './ScrollIndicator';
 import Footer from '../components/Footer'
+import ScrollIndicator from './ScrollIndicator';
 
 const Historia = () => {
     return (
@@ -22,6 +21,7 @@ const Historia = () => {
                 <div className="banner-button">Saiba Mais</div>
                 </a>
             </section>
+            <ScrollIndicator element="page"/>
             <section id="page">
                     <Fade bottom>
                         <h2 className="history-title">História da vacina – Para entender sua Importância</h2>

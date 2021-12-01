@@ -15,7 +15,7 @@ const Header = () => {
         <div className="header--contain">
             <div className="header--logotipo">
             <Link to='/'>
-                <img src={logotipo}/>
+                <img className="logotipo" src={logotipo}/>
             </Link>
             </div>
         <nav>

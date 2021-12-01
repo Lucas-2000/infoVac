@@ -1,4 +1,7 @@
-body, input, button, textarea {
+body,
+input,
+button,
+textarea {
     font-family: 'Nunito Sans', sans-serif;
 
 }
@@ -7,15 +10,15 @@ body, input, button, textarea {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    // color: #333333 !important;
-    // background: #5CDB95;
     scroll-behavior: smooth;
     text-indent: 0;
 }
 
+a {
+    word-break: break-word;
+}
 
-.banner-historia{
-    
+.banner-historia {
     padding-top: 130px;
     height: 100vh;
     display: flex;
@@ -25,6 +28,7 @@ body, input, button, textarea {
     z-index: 5;
     max-width: 100%;
     align-content: stretch;
+    box-shadow: 0px 0px 44px -5px rgba(0, 0, 0, 0.65);
 
     .banner-text {
         font-family: 'Lobster', cursive;
@@ -53,15 +57,19 @@ body, input, button, textarea {
         .col {
             flex: 0 0 50%;
             max-width: 50%;
+
+            @media screen and (max-width: 960px) {
+                max-width: 100%;
+            }
         }
     }
 
-    &::before{
-        content : "";
+    &::before {
+        content: "";
         position: absolute;
         top: 0;
         left: 0;
-        background: linear-gradient(rgba(0,0,0,.8), rgba(255,255,255,.5)), url("../assets/images/banner-vacina.jpg");
+        background: linear-gradient(rgba(0, 0, 0, .8), rgba(255, 255, 255, .5)), url("../assets/images/banner-vacina.jpg");
         width: 100%;
         height: 100%;
         z-index: -1;
@@ -70,7 +78,7 @@ body, input, button, textarea {
     }
 }
 
-.banner-projeto{
+.banner-projeto {
     padding-top: 130px;
     height: 100vh;
     display: flex;
@@ -80,6 +88,7 @@ body, input, button, textarea {
     z-index: 5;
     max-width: 100%;
     align-content: stretch;
+    box-shadow: 0px 0px 44px -5px rgba(0, 0, 0, 0.65);
 
     .banner-text {
         font-family: 'Lobster', cursive;
@@ -111,12 +120,12 @@ body, input, button, textarea {
         }
     }
 
-    &::before{
-        content : "";
+    &::before {
+        content: "";
         position: absolute;
         top: 0;
         left: 0;
-        background: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.5)), url("../assets/images/Banner-Projeto.png");
+        background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .5)), url("../assets/images/Banner-Projeto.png");
         width: 100%;
         height: 100%;
         z-index: -1;
@@ -126,8 +135,7 @@ body, input, button, textarea {
     }
 }
 
-
-.banner-button{
+.banner-button {
     font-family: 'Lobster', cursive;
     color: #fff;
     margin-top: 10px;
@@ -153,23 +161,32 @@ body, input, button, textarea {
     box-shadow: 0px 0px 44px -5px rgba(102, 102, 102, 0.10);
     align-items: center;
     scroll-behavior: smooth;
-    
+
+    h2 {
+        margin: 10px 0px;
+        border-top: 2px solid #ffa000;
+        border-bottom: 2px solid #ffa000;
+        padding: 6px 0;
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
 
     section {
         display: flex;
         flex-direction: column;
         text-align: justify;
         align-items: center;
-        
-        .history-title{
+
+        .history-title {
             padding: 5px;
             background: #D4E6F1;
-            border-radius: 10px 10px 0 0 ;
+            border-radius: 10px 10px 0 0;
             border-bottom: 2px solid #05386B;
             margin: 8px;
         }
 
-        a{
+        a {
             text-decoration: none;
         }
 
@@ -180,38 +197,49 @@ body, input, button, textarea {
         }
     }
 
-    .professores{
+    .professores {
         margin: 0;
         padding: 0;
         text-indent: 0;
 
-        .professor{
+        .professor {
             display: flex;
             flex-direction: row;
             align-items: flex-start;
-            flex: 4;
 
-            p{
+            @media screen and (max-width: 960px) {
+                flex-wrap: wrap;
+            }
+
+            p {
                 text-align: justify;
                 padding: 20px;
             }
 
-            .img-professor{
-                margin-top: 55px ;
+            .img-professor {
+                margin-top: 55px;
                 max-height: 200px;
                 border-radius: 20px;
                 max-width: 100px;
+                box-shadow: 0px 0px 44px -5px rgba(21, 21, 21, 0.25);
+
+                @media screen and (max-width: 960px) {
+                    max-height: none;
+                    max-width: 65%;
+                    display: block;
+                    margin: auto;
+                }
             }
         }
     }
 
-    .alunos{
+    .alunos {
         text-align: left;
 
-        table{
+        table {
             width: 100%;
 
-            td{
+            td {
                 padding: 10px;
                 text-transform: uppercase;
             }
