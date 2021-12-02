@@ -5,6 +5,7 @@ import '../styles/global.scss'
 import Fade from 'react-reveal/Fade';
 import Footer from '../components/Footer'
 import ScrollIndicator from './ScrollIndicator';
+import { i18n } from '../translate/i18n'
 
 const Historia = () => {
     return (
@@ -13,36 +14,36 @@ const Historia = () => {
             <section className="banner-historia">
             <div className="banner-text">
                     <div className="content col">
-                        <h1>História da vacina – Para entender sua Importância</h1>
-                        <h2>Conheça um pouco de como teve início a vacinação no mundo atual</h2>
+                        <h1>{i18n.t('titleBanner.historia')}</h1>
+                        <h2>{i18n.t('subtitleBanner.historia')}</h2>
                     </div>
                 </div>
                 <a href="#page">
-                <div className="banner-button">Saiba Mais</div>
+                <div className="banner-button">{i18n.t('button.saiba')}</div>
                 </a>
             </section>
             <ScrollIndicator element="page"/>
             <section id="page">
                     <Fade bottom>
-                        <h2 className="history-title">História da vacina – Para entender sua Importância</h2>
+                        <h2 className="history-title">{i18n.t('historia.title')}</h2>
                         <p>
-                            Em 8 de maio de 1980, a Organização Mundial de Saúde declarava erradicada uma das piores, mais cruéis e catastróficas moléstias já existentes. Tratava-se da varíola, doença infecto-contagiosa exclusiva do homem, causada por um vírus chamado Orthopoxvirus variolae. Durante os 80 anos em que a varíola ficou ativa, a varíola matou mais de 300 milhões de indivíduos. Esse número é bem superior ao de outras moléstias, como a tuberculose, a hanseníase, a gripe espanhola, a peste e até mesmo a Aids. Nem mesmo a soma do número de mortos de todas as guerras (inclusive as mundiais), superaria o de vítimas da varíola.
+                        {i18n.t('historia.p1')}
                         </p><br/>
                         <p>
-                            No século XV, que apareceram as primeiras descrições de indução de imunidade na tentativa de salvar vidas humanas, prevenindo a infecção pela varíola. Procedimentos realizados pelos chineses e turcos, mostrando que crostas dissecadas de pústulas de varíola humana (apenas de casos de sobreviventes à doença) eram inaladas ou sopradas nas narinas das crianças com o auxílio de um tubo de prata, estas não adquiriam a doença.
+                        {i18n.t('historia.p2')}
                         </p><br/>
                         <p>
-                            Em 1796, o médico inglês Edward Jenner introduziu um grande avanço nos procedimentos da variolização. Naquela época, Jenner fazia atendimentos médicos em área rural da Inglaterra e observou que ordenhadores que contraíam a varíola bovina, uma forma branda da moléstia que provocava pústulas no úbere e nas tetas das vacas, se tornavam imunes à varíola humana. Este fato o deixou muito intrigado e o levou a formular a seguinte hipótese: se o fluido das pústulas da varíola bovina fosse inoculado em indivíduos saudáveis, eles se tornariam imunes à varíola humana? Para testar essa hipótese, Jenner inoculou fluido da varíola bovina em um garoto de 8 anos de idade e, posteriormente, infectou-o, intencionalmente, com a varíola humana! Felizmente, ele estava certo, e o garoto não adoeceu (Fig. 1). 
+                        {i18n.t('historia.p3')}
                         </p><br/>
                         <div className="img-text">
                             <img src={vaccines} alt="Vacina aplicada em garoto de 8 anos" />
-                            <p>Fig. 2. Edward Jenner e o garoto de 8 anos (<a href="https://www.bio.fiocruz.br/index.php/br/noticias/1738-conheca-a-historia-das-vacinas" target="_blank" rel="noreferrer">https://www.bio.fiocruz.br/index.php/br/noticias/1738-conheca-a-historia-das-vacinas</a>)</p>
+                            <p>{i18n.t('historia.img')}</p>
                         </div>
                         <p>
-                            A descoberta de Jenner foi utilizada em campanhas de vacinação mundial pela Organização Mundial da Saúde (OMS). As campanhas resultaram na erradicação da varíola humana em todos os países. A partir de 1980, a OMS convocou todos os laboratórios no mundo para destruir os estoques do vírus da varíola, a fim de evitar que ele pudesse ser reintroduzido no ambiente de forma acidental ou mesmo criminosa. Dois laboratórios têm a guarda oficial do estoque deste vírus: o Centro de Controle de Doenças (CDC) de Atlanta, EUA, e o Instituto Vector, na Rússia. Atualmente, a grande preocupação é que esse vírus seja utilizado como arma biológica.
+                        {i18n.t('historia.p4')}
                         </p><br/>
                         <p>
-                            Até hoje, é a única doença humana já erradicada, um exemplo do que podemos alcançar quando todas as nações trabalham em conjunto. O sucesso do programa de erradicação forneceu conhecimento e ferramentas vitais no que diz respeito à vigilância epidemiológica, aos benefícios da vacinação de bloqueio e à importância da promoção da saúde no enfrentamento a enfermidades como a poliomielite e o ebola. Além disso, permitiu estabelecer as bases para o fortalecimento de programas de imunização, de atenção primária e impulsionou o acesso universal à saúde em diversos países. No Brasil, o direito é garantido desde a Constituição de 1988.
+                        {i18n.t('historia.p5')}
                         </p><br/>
                     </Fade>
             </section>

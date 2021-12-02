@@ -8,6 +8,7 @@ import bluelight from '../assets/images/injections/injection_bluelight.svg';
 import green from '../assets/images/injections/injection_green.svg';
 import orange from '../assets/images/injections/injection_orange.svg';
 import pink from '../assets/images/injections/injection_pink.svg';
+import { i18n } from '../translate/i18n';
 
 const MenuVaccines = () => {
     return (
@@ -17,7 +18,7 @@ const MenuVaccines = () => {
                     <Link to="page-vaccines" smooth={true} activeClass="active" spy={true} duration={200}>
                         <Href to='/vaccines/febretifoide' style={{ textDecoration: 'none' }}>
                             <li>
-                                <p>Febre Tifoide</p>
+                                <p>{i18n.t('menuVacinas.febreTifoide')}</p>
                                 <img src={yellow} />
                             </li>
                         </Href>
@@ -27,7 +28,7 @@ const MenuVaccines = () => {
                     <Link to="page-vaccines" smooth={true} activeClass="active" spy={true} duration={200}>
                         <Href to='/vaccines/hepatiteb' style={{ textDecoration: 'none' }}>
                             <li>
-                                <p>Hepatite B</p>
+                                <p>{i18n.t('menuVacinas.hepatite')}</p>
                                 <img src={blue} />
                             </li>
                         </Href>
@@ -36,7 +37,7 @@ const MenuVaccines = () => {
                     <Link to="page-vaccines" smooth={true} activeClass="active" spy={true} duration={200}>
                         <Href to='/vaccines/febreamarela' style={{ textDecoration: 'none' }}>
                             <li>
-                                <p>Febre Amarela</p>
+                                <p>{i18n.t('menuVacinas.febreAmarela')}</p>
                                 <img src={bluelight} />
                             </li>
                         </Href>
@@ -45,7 +46,7 @@ const MenuVaccines = () => {
                     <Link to="page-vaccines" smooth={true} activeClass="active" spy={true} duration={200}>
                         <Href to='/vaccines/poliomielite' style={{ textDecoration: 'none' }}>
                             <li>
-                                <p>Poliomielite</p>
+                                <p>{i18n.t('menuVacinas.poliomelite')}</p>
                                 <img src={green} />
                             </li>
                         </Href>
@@ -54,7 +55,7 @@ const MenuVaccines = () => {
                     <Link to="page-vaccines" smooth={true} activeClass="active" spy={true} duration={200}>
                         <Href to='/vaccines/bcg' style={{ textDecoration: 'none' }}>
                             <li>
-                                <p>BCG</p>
+                                <p>{i18n.t('menuVacinas.bcg')}</p>
                                 <img src={orange} />
                             </li>
                         </Href>
@@ -63,7 +64,7 @@ const MenuVaccines = () => {
                     <Link to="page-vaccines" smooth={true} activeClass="active" spy={true} duration={200}>
                         <Href to='/vaccines/hpv' style={{ textDecoration: 'none' }}>
                             <li>
-                                <p>HPV</p>
+                                <p>{i18n.t('menuVacinas.hpv')}</p>
                                 <img src={pink} />
                             </li>
                         </Href>

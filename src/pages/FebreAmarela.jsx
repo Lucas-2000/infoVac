@@ -4,6 +4,7 @@ import MenuVaccines from '../components/MenuVaccines'
 import febreAmarela from '../assets/images/febreamarela.jpg'
 import Fade from 'react-reveal/Fade';
 import Footer from '../components/Footer'
+import { i18n } from '../translate/i18n'
 
 const FebreAmarela = () => {
     return (
@@ -13,22 +14,22 @@ const FebreAmarela = () => {
             <section className="banner-vacinas">
             <div className="banner-text">
                     <div className="content col">
-                        <h1>Como funcionam as Vacinas?</h1>
-                        <h2>Saiba informações cruciais sobre as vacinas mais conhecidas</h2>
+                        <h1>{i18n.t('titleBanner.vacinas')}</h1>
+                        <h2>{i18n.t('subtitleBanner.vacinas')}</h2>
                     </div>
                 </div>
                 <a href="#page-vaccines">
-                <div className="banner-button">Saiba Mais</div>
+                <div className="banner-button">{i18n.t('button.saiba')}</div>
                 </a>
             </section>
             
             <div id="page-vaccines">
                 <main>
                     <Fade bottom>
-                        <h2 className="titulo">Vacina da febre amarela</h2>
+                        <h2 className="titulo">{i18n.t('fa.Title')}</h2>
                         <img src={febreAmarela} alt="Febre amarela" />
-                        <p>A FEBRE AMARELA é uma doença viral aguda, imunoprevenível, transmitida ao homem e a primatas não humanos (macacos), por meio da picada de mosquitos infectados.</p><br/>
-                        <p>A vacina é a principal ferramenta de prevenção e controle da febre amarela. O Sistema Único de Saúde (SUS) oferta vacina contra febre amarela para a população. O Brasil adota o esquema vacinal de apenas uma dose durante toda a vida, sendo que a pessoa que recebeu uma dose da vacina antes de completar (5) cinco anos , está indicada a dose de reforço, independentemente da idade que tiver.</p>
+                        <p>{i18n.t('fa.p1')}</p><br/>
+                        <p>{i18n.t('fa.p2')}</p>
                     </Fade>
                 </main>
             </div>
