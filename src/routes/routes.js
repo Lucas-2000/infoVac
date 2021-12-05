@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import BCG from '../pages/BCG'
 import FebreAmarela from '../pages/FebreAmarela'
 import FebreTifoide from '../pages/FebreTifoide'

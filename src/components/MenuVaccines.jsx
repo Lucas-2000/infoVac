@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link as Href } from 'react-router-dom'
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import '../styles/menuVaccines.scss'
 import yellow from '../assets/images/injections/injection_yellow.svg';
 import blue from '../assets/images/injections/injection_blue.svg';
@@ -19,7 +19,7 @@ const MenuVaccines = () => {
                         <Href to='/vaccines/febretifoide' style={{ textDecoration: 'none' }}>
                             <li>
                                 <p>{i18n.t('menuVacinas.febreTifoide')}</p>
-                                <img src={yellow} />
+                                <img alt="febretifoide" src={yellow} />
                             </li>
                         </Href>
                     </Link>
@@ -29,7 +29,7 @@ const MenuVaccines = () => {
                         <Href to='/vaccines/hepatiteb' style={{ textDecoration: 'none' }}>
                             <li>
                                 <p>{i18n.t('menuVacinas.hepatite')}</p>
-                                <img src={blue} />
+                                <img alt="hepatiteb" src={blue} />
                             </li>
                         </Href>
                     </Link>
@@ -38,7 +38,7 @@ const MenuVaccines = () => {
                         <Href to='/vaccines/febreamarela' style={{ textDecoration: 'none' }}>
                             <li>
                                 <p>{i18n.t('menuVacinas.febreAmarela')}</p>
-                                <img src={bluelight} />
+                                <img alt="febreamarela" src={bluelight} />
                             </li>
                         </Href>
                     </Link>
@@ -47,7 +47,7 @@ const MenuVaccines = () => {
                         <Href to='/vaccines/poliomielite' style={{ textDecoration: 'none' }}>
                             <li>
                                 <p>{i18n.t('menuVacinas.poliomelite')}</p>
-                                <img src={green} />
+                                <img alt="poliomielite" src={green} />
                             </li>
                         </Href>
                     </Link>
@@ -56,7 +56,7 @@ const MenuVaccines = () => {
                         <Href to='/vaccines/bcg' style={{ textDecoration: 'none' }}>
                             <li>
                                 <p>{i18n.t('menuVacinas.bcg')}</p>
-                                <img src={orange} />
+                                <img alt="bcg" src={orange} />
                             </li>
                         </Href>
                     </Link>
@@ -65,7 +65,7 @@ const MenuVaccines = () => {
                         <Href to='/vaccines/hpv' style={{ textDecoration: 'none' }}>
                             <li>
                                 <p>{i18n.t('menuVacinas.hpv')}</p>
-                                <img src={pink} />
+                                <img alt="hpv" src={pink} />
                             </li>
                         </Href>
                     </Link>

@@ -240,7 +240,7 @@ main {
                     }
 
                     img {
-                        max-width: 500px;
+                        max-width: 90%;
                         margin: auto;
                         display: block;
                     }
@@ -252,6 +252,7 @@ main {
             flex: inherit;
             max-width: initial;
             margin: 0;
+            padding: 16px 10px;
 
             .row {
                 margin: 0;
